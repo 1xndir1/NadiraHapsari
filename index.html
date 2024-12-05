@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Nadira Hapsari's Portfolio</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#"><span>Nadira Hapsari</span></a> 
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#video">Multimedia</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><a href="#discuss__project">Discuss Your Project</a></li>
+      <li><a href="CV.pdf" download="">Download CV</a></li>
+    </ul>
+    <div class="nav__btn">
+      <a href="CV.pdf" download="">Download CV</a>
+    </div>
+  </nav>
+
+  <header class="section__container header__container" id="about">
+    <div class="header__image">
+      <img src="header.png" alt="header" />
+    </div>
+    <div class="header__content">
+      <p class="section__subheader">Welcome</p>
+      <h1>I am a <span>Student</span><br>and an <span>Event Organizer</span></h1>
+      <p class="section__description">
+        Step into my world. This portfolio is a journey through my creative process – come explore and discover what inspires me.
+      </p>
+      <div class="header__btns">
+        <button class="btn">Contact Me</button>
+        <a href="#portfolio">
+          View Portfolio
+          <span><i class="ri-arrow-right-up-line"></i></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container stats__container">
+    <div class="stats__card">
+      <h4>1</h4>
+      <p>Concert</p>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__card">
+      <h4>20+</h4>
+      <p>Project completed</p>
+    </div>
+  </section>
+
+  <section class="section__container skill__container" id="skill">
+    <div class="skill__content">
+      <p class="section__subheader">My Skills</p>
+      <h2 class="section__header">Why Hire Me For Your Next <span>Project?</span></h2>
+      <p class="section__description">
+        I am a highly organized and detail-oriented individual. I am also an excellent communicator and have a proven ability to build relationships with clients and vendors.
+      </p>
+    </div>
+    <table class="skill__grid"> 
+      <tr>
+        <td class="skill__card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Event Organizer</h4>
+          <p>Planning and executing events, as well as building partnerships with other communities for events.</p>
+        </td>
+        <td class="skill__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Social Media Manager</h4>
+          <p>Manage multiple social media accounts, analyze data to boost engagement and followers, and create informative and engaging posts.</p>
+        </td>
+      </tr>
+    </table> 
+  </section>
+
+  <section class="portfolio__container" id="portfolio">
+    <div class="portfolio__content">
+      <p class="section__subheader">Portfolio</p>
+      <h2 class="section__header">My Works Latest <span>Projects</span></h2>
+      <p class="section__description">
+        I'm currently contributing to J_ust live in Jakarta 2024 and recently fundraised over Rp 41 million for Hutan Harapan, showcasing my dedication to impactful projects.
+      </p>
+      <div class="portfolio__btn">
+        <button class="btn" onclick="window.location.href='#video'">Show More</button> 
+      </div>
+    </div>
+    <div class="portfolio__image__wrapper">
+      <div class="portfolio__image">
+        <img src="portfolio-1.jpg" alt="portfolio" />
+        <img src="portfolio-2.jpg" alt="portfolio" />
+        <img src="portfolio-3.jpg" alt="portfolio" />
+        <img src="portfolio-4.jpg" alt="portfolio" />
+        <img src="portfolio-5.jpg" alt="portfolio" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section__video" id="video">
+    <div class="video__content"></div>
+    <p class="section__subheader">Multimedia</p>
+    <h2 class="section__header">Watch More <span>About Me</span></h2> 
+    <div class="swiper mySwiper"> 
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> 
+          <video controls>
+            <source src="video-1.mp4" type="video/mp4"> 
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video controls>
+            <source src="video-2.mp4" type="video/mp4"> 
+          </video>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div> 
+      <div class="swiper-button-prev"></div> 
+      <div class="swiper-button-next"></div> 
+    </div>
+  </section>
+
+  <section class="section__container contact__container" id="discuss__project">
+    <p class="section__subheader">Contact</p>
+    <h2 class="section__header">Let's Discuss Your <span>Project</span></h2>
+    <p class="section__description">
+      Looking to elevate your brand or organization through engaging events,
+      thriving online communities, or captivating social media content?
+      Let's connect and explore how I can contribute to your success.
+    </p>
+    <form action="mailto:nadira11.nh@gmail.com"> 
+      <input type="text" placeholder="Full name" />
+      <input type="email" placeholder="Your email" /> 
+      <input type="tel" placeholder="Phone number" /> 
+      <textarea placeholder="Message"></textarea>
+      <button class="btn" type="submit">Submit Message</button> 
+    </form>
+  </section>
+
+  <footer class="section__container footer__container" id="footer">
+    <p>Copyright © 2024 Nadira Hapsari. All rights reserved.</p>
+    <ul class="footer__socials">
+      <li>
+        <a href="https://www.instagram.com/_xndir/"><i class="ri-instagram-fill"></i></a>
+      </li>
+      <li>
+        <a href="https://wa.me/+6285156170771/"><i class="ri-whatsapp-fill"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
